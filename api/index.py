@@ -16,6 +16,7 @@ WORKFLOWS = [
     {"repo": "att_reporte", "workflow": "reporte.yml"},
     {"repo": "backlog", "workflow": "backlog.yml"},
     {"repo": "reportes_sp5", "workflow": "dados.yml"},
+    {"repo": "reportes_sp15", "workflow": "atualizacao_sp15.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
