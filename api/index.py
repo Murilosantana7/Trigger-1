@@ -19,6 +19,8 @@ WORKFLOWS = [
     {"repo": "reportes_sp15", "workflow": "atualizacao_sp15.yaml"},
     {"repo": "hora_hora_louveira", "workflow": "atualizacao_sp7.yaml"},
     {"repo": "reportes_sp7", "workflow": "atualizacao_sp7.yaml"},
+    {"repo": "piso_outbound_mg2", "workflow": "piso10.yml"},
+    {"repo": "base_packed_mg2", "workflow": "main_base_to_packed.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
