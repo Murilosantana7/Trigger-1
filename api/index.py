@@ -13,14 +13,8 @@ HEADERS = {
 
 # Lista de workflows a serem acionados
 WORKFLOWS = [
-    {"repo": "att_reporte", "workflow": "reporte.yml"},
-    {"repo": "backlog", "workflow": "backlog.yml"},
-    {"repo": "reportes_sp5", "workflow": "dados.yml"},
-    {"repo": "reportes_sp15", "workflow": "atualizacao_sp15.yaml"},
-    {"repo": "hora_hora_louveira", "workflow": "atualizacao_sp7.yaml"},
-    {"repo": "reportes_sp7", "workflow": "atualizacao_sp7.yaml"},
-    {"repo": "piso_outbound_mg2", "workflow": "piso10.yml"},
-    {"repo": "base_packed_mg2", "workflow": "main_base_to_packed.yaml"},
+    
+    {"repo": "contagem_piso_out_sp5", "workflow": "piso_exp.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
@@ -33,7 +27,7 @@ def home():
 def trigger_workflows():
     # Loop que executa a lógica UMA VEZ por chamada
     for wf in WORKFLOWS:
-        url = f"https://api.github.com/repos/luis-tiberio/{wf['repo']}/actions/workflows/{wf['workflow']}/dispatches"
+        url = f"https://api.github.com/repos/Murilosantana7/{wf['repo']}/actions/workflows/{wf['workflow']}/dispatches"
         data = {"ref": "main"}
         try:
             res = requests.post(url, headers=HEADERS, json=data)
