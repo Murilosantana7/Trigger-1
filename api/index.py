@@ -14,7 +14,6 @@ HEADERS = {
 
 WORKFLOWS = [
     {"repo": "contagem_piso_out_sp5", "workflow": "piso_exp.yaml"},
-    {"repo": "QueueListLog", "workflow": "queuelistsp5.yaml"},
 ]
 
 def trigger_loop():
